@@ -27,12 +27,9 @@ int main() {
 /*
 * Giai thich :
 -  int age : Khong khai bao gi thi mac dinh default la private
-* Notes : Co 4 kieu pham vi truy cap
-- default => mac dinh la private
-- private
-- public
-- protected
-=>> private va protected chi duoc truy cap trong class Person khong goi duoc ra ben ngoai
+=>private va protected chi duoc truy cap trong class Person khong goi duoc ra ben ngoai
+=>> Ta co the gan gia tri cua bien private cho gia tri co kieu du lieu tuong ung cua cua ham public void temp() va truy cap duoc gia tri cua cac
+bien private binh thuong. (ham temp la public)
 */
 	return 0;
 }
