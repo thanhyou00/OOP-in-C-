@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Inheritance - Tinh ke thua
+
 class Parent { // Class cha
 	protected : int age;
 };
