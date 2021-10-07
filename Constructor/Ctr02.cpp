@@ -33,6 +33,8 @@ int main() {
 	car01.toString01();
 	cout<<endl;
 	car02.toString02();
+	cout<<endl;
+	cout<<car01.brand<<endl; // Truy cap den tung thuoc tinh cua doi tuong
 	return 0;
 }
 
