@@ -7,7 +7,7 @@ class Parent { // Class cha
 	protected : int age;
 };
 
-class Child : public Parent { // Class con ke thua tu class cha
+class Child : public Parent { // Class con ke thua tu class cha - Don ke thua
 	public : void temp(int temp_age) {
 		age = temp_age;
 		cout<<age<<endl;
