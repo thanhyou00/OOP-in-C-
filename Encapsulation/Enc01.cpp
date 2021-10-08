@@ -10,11 +10,11 @@ class Student {
 	public : 
 	// Setter
     void setName(string name) {
-      this->name = name;
+    	this->name = name;
     }
     // Getter
     string getName() {
-      return name;
+    	return name;
     }	
 };
 

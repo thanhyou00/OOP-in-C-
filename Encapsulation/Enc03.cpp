@@ -2,9 +2,17 @@
 using namespace std;
 
 class Student {
-	private :
-	string name ;
+	private : string name ;
 	int age;
+	
+	public : Student () { // Constructor khong co tham so
+	
+	};
+	
+	public : Student (string name, int age) { // Constructor co tham so
+		this->name = name;
+		this->age = age;
+	}; 
 	
 	public : 
     void setName(string name) { // Setter
@@ -20,13 +28,16 @@ class Student {
 	int getAge() {
 		return age; // Tra ve gia tri cua bien age
 	}  
+	
+	void toString() {
+		cout<<"From Coding to Life !";
+	}
 };
 int main() {
-	Student st;
-	st.setName("thanhyou00"); // Truyen truc tiep gia tri cho name
-	st.setAge(21);
+	Student st = Student("thanhyou00",21); // Truyen gia tri truc tiep vao constructor ben ngoai class
+	Student st01 = Student();
 	cout<<"Name : "<<st.getName()<<endl;
 	cout<<"Age : "<<st.getAge()<<endl;
+	st01.toString();
 	return 0;
 }
-
