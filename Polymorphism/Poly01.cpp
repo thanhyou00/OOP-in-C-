@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Multiple Inheritance - Da ke thua
+// Polymorphism - Tinh da hinh
 
 class Parent {
 	protected : 
