@@ -1,11 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Abstract class
-
 class Shape {
    public:
       virtual int Area() = 0; // Khai bao ham thuan ao bang 0
+      virtual void Hello() =0;
       void setWidth(int width) {
          this->width = width;
       }
@@ -21,23 +20,20 @@ class Rectangle: public Shape { // Rectangle ke thua tu Shape
       int Area() { 
          return (width * height); // Rectangle thuc thi (implement) phuong thuc Area() tu Shape
       }
-};
-class Triangle: public Shape { // Triangle ke thua tu Shape
-   public:
-      int Area() { 
-         return (width * height)/2; // Triangle thuc thi (implement) phuong thuc Area() tu Shape
-      }
+      void Hello() {
+	     cout<<"Hello C++"<<endl;
+	  }	  
 };
 int main() {
   Rectangle R;
-  Triangle T;
-
   R.setWidth(5);
   R.setHeight(10);
-
-  T.setWidth(20);
-  T.setHeight(8);
   cout <<R.Area() << endl;
-  cout <<T.Area() << endl;
+/*
+* Notes :
+- Tat ca cac class ke thua tu Shape phai thuc thi tat ca cac phuong thuc virtual
+- Kieu du lieu tra ve cua ham virtual phai thong nhat (consistent) khong duoc thay doi trong tat ca cac class
+- Tat ca cac phuong thuc virtual luon luon phai khai bao bat buoc bang 0
+*/  
+  return 0;
 }
-
